@@ -9,4 +9,12 @@
     <artifactId>test-lib</artifactId>
     <version>1.0</version>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/mapping-dsl/test-lib</url>
+        </repository>
+    </distributionManagement>
+
 </project>
