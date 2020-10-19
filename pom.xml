@@ -11,9 +11,8 @@
 
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/mapping-dsl/test-lib</url>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/alexeyanufriev/mapping-dsl/test-lib/;publish=1</url>
         </repository>
     </distributionManagement>
 

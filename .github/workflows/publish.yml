@@ -16,7 +16,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-        server-id: github
+        server-id: bintray
+        server-username: BINTRAY_USERNAME
+        server-password: BINTRAY_PASSWORD
         settings-path: ${{ github.workspace }}
 
     - name: Run Maven Build
@@ -25,4 +27,5 @@ jobs:
     - name: Run Maven Deploy
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
-        GITHUB_TOKEN: ${{ github.token }}
+        BINTRAY_USERNAME: alexeyanufriev
+        BINTRAY_PASSWORD: ${{ secrets.BINTRAY_API_KEY }}
