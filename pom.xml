@@ -9,4 +9,11 @@
     <artifactId>test-lib</artifactId>
     <version>1.0</version>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://github.com/mapping-dsl/test-lib</url>
+        </repository>
+    </distributionManagement>
+
 </project>
