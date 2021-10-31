@@ -9,11 +9,4 @@
     <artifactId>test-lib</artifactId>
     <version>1.0</version>
 
-    <distributionManagement>
-        <repository>
-            <id>bintray</id>
-            <url>https://api.bintray.com/maven/alexeyanufriev/mapping-dsl/test-lib/;publish=1</url>
-        </repository>
-    </distributionManagement>
-
 </project>
